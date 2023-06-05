@@ -1,0 +1,50 @@
+// roboto-fontface | Apache License v2.0 | http://www.apache.org/licenses/LICENSE-2.0.txt
+
+@mixin roboto-font($folder, $variant, $type, $weight, $style) {
+
+    $font-full-path: '#{$roboto-font-path}/#{$folder}/#{$variant}';
+
+    @font-face {
+        font-family: '#{$variant}';
+        src: url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
+             url('#{$font-full-path}-#{$type}.woff') format('woff');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: '#{$variant}-#{$type}';
+        src: url('#{$font-full-path}-#{$type}.woff2') format('woff2'),
+             url('#{$font-full-path}-#{$type}.woff') format('woff');
+        font-display: swap;
+    }
+}
+
+/**
+* Robotot
+*/
+/*
+@include roboto-font('roboto', 'Roboto', 'BlackItalic', 900, italic);
+@include roboto-font('roboto', 'Roboto', 'Black', 900, normal);
+@include roboto-font('roboto', 'Roboto', 'BoldItalic', 700, italic);
+@include roboto-font('roboto', 'Roboto', 'Bold', 700, normal);
+//@include roboto-font('roboto', 'Roboto', 'LightItalic', 300, italic);
+//@include roboto-font('roboto', 'Roboto', 'Light', 300, normal);
+@include roboto-font('roboto', 'Roboto', 'MediumItalic', 500, italic);
+@include roboto-font('roboto', 'Roboto', 'Medium', 500, normal);
+@include roboto-font('roboto', 'Roboto', 'RegularItalic', 400, italic);
+@include roboto-font('roboto', 'Roboto', 'Regular', 400, normal);
+//@include roboto-font('roboto', 'Roboto', 'ThinItalic', 100, italic);
+//@include roboto-font('roboto', 'Roboto', 'Thin', 100, normal);
+*/
+
+/**
+* Robotot-Condensed
+*/
+@include roboto-font('roboto-condensed', 'Roboto-Condensed', 'BoldItalic', 700, italic);
+@include roboto-font('roboto-condensed', 'Roboto-Condensed', 'Bold', 700, normal);
+//@include roboto-font('roboto-condensed', 'Roboto-Condensed', 'LightItalic', 300, italic);
+//@include roboto-font('roboto-condensed', 'Roboto-Condensed', 'Light', 300, normal);
+@include roboto-font('roboto-condensed', 'Roboto-Condensed', 'RegularItalic', 400, italic);
+@include roboto-font('roboto-condensed', 'Roboto-Condensed', 'Regular', 400, normal);

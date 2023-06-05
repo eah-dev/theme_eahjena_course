@@ -1,0 +1,233 @@
+/* RTE Styles */
+$eah-table-border:                      #cacaca; //?
+$eah-light-green:                       #cdece8; //?
+
+//== Colors
+//
+// scss-docs-start gray-color-variables
+$white:                                 #ffffff !default;
+$gray-100:                              #f8f9fa !default;
+$gray-200:                              #e9ecef !default;
+$gray-300:                              #dee2e6 !default;
+$gray-400:                              #ced4da !default;
+$gray-500:                              #adb5bd !default;
+$gray-600:                              #6c757d !default;
+$gray-700:                              #495057 !default;
+$gray-800:                              #343a40 !default;
+$gray-900:                              #212529 !default;
+$black:                                 #000000 !default;
+// scss-docs-end gray-color-
+
+$red:                                   #f00; // == #ff0000
+$yellow:                                #f5a064;
+
+$blue:                                  #394a5f; // Dunkelblau - rgb (57,74,95)
+$blue-dark:                             #3a6ce2; // Akzentblau
+
+// eah - color
+$green-light:                           #cdece8;
+$green:                                 #00aaa0; // EAH gruen - rgb (0,153,153)
+$green-dark:                            #2f4f4f; // #2f4f4f = DarkSlateGray
+
+$eah-gray:                              #efefef;
+$eah-gray-light:                        #616e7f; // rgb (97, 110, 127)
+$eah-gray-dark:                         rgba(57, 74, 95, 0.4); // (#394A5F mit 40% Deckkraft)
+
+//## Gray and brand colors for use across Bootstrap.
+$gray-base:                             $black;
+//$gray-darker:                         lighten($gray-base, 13.5%); // #222 rgb(34, 34, 34)
+//$gray-dark:                           lighten($gray-base, 20%);   // #333
+$gray:                                  $gray-500;//lighten($gray-base, 33.5%); // #555
+$gray-light:                            $gray-300;//lighten($gray-base, 93.5%); // #eee
+$gray-lighter:                          $gray-100;//lighten($gray-base, 97%);
+
+// background color (hintergrund farben)
+$bg-color-gray:                         $gray-light; // grau
+$bg-color-gray-lighter:                 $gray-lighter; // grau
+$bg-color-blue:                         $blue; // blau
+$bg-color-green:                        $green;
+$bg-color-white:                        $white;
+$bg-color-black:                        $black;
+
+// transparent color
+// 50% transparent
+$eah-overlay-50:                        rgba(0, 0, 0, 0.5);
+
+// green -> #009A93 -> rgb (0, 154, 147)
+$transparent-green-light:               rgba(0, 154, 147, 0.25);
+$transparent-green:                     rgba(0, 154, 147, 0.5);
+$transparent-green-dark:                rgba(0, 154, 147, 0.8);
+
+// blue -> #394A5F -> rgb (57,74,95)
+$transparent-blue-light:                rgba(57, 74, 95, 0.25);
+$transparent-blue:                      rgba(57, 74, 95, 0.5);
+$transparent-blue-dark:                 rgba(57, 74, 95, 0.65);
+$transparent-blue-darker:               rgba(57, 74, 95, 0.85);
+
+$search-form-color:                     $blue; //#75818f;
+
+$link-color:                            $green;
+
+// button
+$btn-color-blue:                        $blue-dark;
+
+/*
+$brand-primary:                         darken(#428bca, 6.5%); // #337ab7
+$brand-success:                         #5cb85c;
+$brand-info:                            #5bc0de;
+$brand-warning:                         #f0ad4e;
+$brand-danger:                          #d9534f;
+*/
+
+// Farben der Fachbereiche (CD Handbuch, Stand 6|2021)
+$faculties-color-bw:                    rgba(233,131,0, 1);
+$faculties-color-bw-overlay:            rgba(233,131,0, 0.5);
+$faculties-color-et:                    rgba(167, 25, 48, 1);
+$faculties-color-et-overlay:            rgba(167, 25, 48, 0.5);
+$faculties-color-gp:                    rgba(149, 45, 152, 1);
+$faculties-color-gp-overlay:            rgba(149, 45, 152, 0.5);
+$faculties-color-gw:                    rgba(15, 32, 75 , 1);
+$faculties-color-gw-overlay:            rgba(15, 32, 75 , 0.5);
+$faculties-color-mb:                    rgba(235, 183, 0, 1);
+$faculties-color-mb-overlay:            rgba(235, 183, 0, 0.5);
+$faculties-color-mt:                    rgba(0, 109, 85, 1);
+$faculties-color-mt-overlay:            rgba(0, 109, 85, 0.5);
+$faculties-color-sc:                    rgba(0, 185, 228, 1);
+$faculties-color-sc-overlay:            rgba(0, 185, 228, 0.5);
+$faculties-color-sw:                    rgba(224, 82, 6, 1);
+$faculties-color-sw-overlay:            rgba(224, 82, 6, 0.5);
+$faculties-color-wi:                    rgba(105, 190, 40, 1);
+$faculties-color-wi-overlay:            rgba(105, 190, 40, 0.5);
+
+// (default) bootstrap variable -> overwrite
+$primary: $green;
+
+// Links
+//
+// Style anchor elements.
+$link-color:                            $green;
+$link-hover-color:                      $green;
+// card
+$card-link-color:                       $green;
+
+$background-colors: (
+  green: (
+    background:                         $green,
+    background-hover:                   $green,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  blue: (
+    background:                         $blue,
+    background-hover:                   $blue,
+    link-color:                         $white,
+    link-hover-color:                   $link-hover-color,
+    color:                              $white
+  ),
+  graylight: (
+    background:                         $gray-light,
+    background-hover:                   $gray-light,
+    link-color:                         $link-color,
+    link-hover-color:                   $link-hover-color,
+    color:                              $black
+  ),
+  fbbw: (
+    background:                         $faculties-color-bw,
+    background-hover:                   $faculties-color-bw-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbet: (
+    background:                         $faculties-color-et,
+    background-hover:                   $faculties-color-et-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbgp: (
+    background:                         $faculties-color-gp,
+    background-hover:                   $faculties-color-gp-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbgw: (
+    background:                         $faculties-color-gw,
+    background-hover:                   $faculties-color-gw-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbmb: (
+    background:                         $faculties-color-mb,
+    background-hover:                   $faculties-color-mb-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbmt: (
+    background:                         $faculties-color-mt,
+    background-hover:                   $faculties-color-mt-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbsc: (
+    background:                         $faculties-color-sc,
+    background-hover:                   $faculties-color-sc-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbsw: (
+    background:                         $faculties-color-sw,
+    background-hover:                   $faculties-color-sw-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  ),
+  fbwi: (
+    background:                         $faculties-color-wi,
+    background-hover:                   $faculties-color-wi-overlay,
+    link-color:                         $white,
+    link-hover-color:                   $white,
+    color:                              $white
+  )
+);
+
+//
+// Frame Background
+//
+$frame-background-graylight:                $gray-light;
+
+$frame-backgrounds: () !default;
+$frame-backgrounds:
+    map-merge(
+        (
+            green: (
+                background:                $green,
+                link-color:                $white,
+                link-hover-color:          $white,
+                color:                     $white
+            ),
+            blue: (
+                background:                $blue,
+                link-color:                $white,
+                link-hover-color:          $link-hover-color,
+                color:                     $white
+            ),
+            graylight: (
+                background:                $frame-background-graylight,
+                link-color:                $link-color,
+                link-hover-color:          $link-hover-color,
+                color:                     $black
+            ),
+        ),
+        $frame-backgrounds
+    );
+
+$accordion-button-bg:                       $gray-100;
+$accordion-button-active-bg:                $gray-light;// tint-color($gray-light, 10%);
+$accordion-button-active-color:             $black;//shade-color($primary, 10%);

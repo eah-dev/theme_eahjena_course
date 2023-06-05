@@ -1,0 +1,22 @@
+.news-detail {
+    .header {
+        .header-news-date {
+            font-style: italic;
+        }
+        .headline {
+            font-weight: bold;
+            line-height: 2rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+    .news-content-body {
+        //
+    }
+    .news-content-sidebar {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

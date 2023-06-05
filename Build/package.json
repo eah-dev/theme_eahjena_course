@@ -1,0 +1,27 @@
+{
+  "name": "theme_eahjena_course",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eah-dev/theme_eahjena_course"
+  },
+  "homepage": "https://www.eah-jena.de",
+  "author": "Carsten Hoelbing",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "bootstrap-icons": "^1.10.5",
+    "grunt": "^1.6.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^5.0.0",
+		"grunt-contrib-uglify": "^5.2.2",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^3.1.0",
+    "hammerjs": "^2.0.8",
+    "node-sass": "^9.0.0",
+    "roboto-fontface": "0.10.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/grunt build"
+  }
+}

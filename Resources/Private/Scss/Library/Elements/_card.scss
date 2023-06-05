@@ -1,0 +1,18 @@
+//
+// Variables
+// --------------------------------------------------
+
+.high-contrast {
+    .card {
+        background-color: $black !important;
+        border-color: $white !important;
+        .card-header {
+            background-color: $black;
+            color: $white;
+        }
+        .card-body {
+            color: $white;
+            //
+        }
+    }
+}

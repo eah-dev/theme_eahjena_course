@@ -1,0 +1,22 @@
+.frame-type-tab {
+    .nav-item {
+        font-size: $h5-font-size;
+    }
+    .tab-content {
+        padding: 1rem;
+        font-size: $h5-font-size;
+        border-right-color: $gray-light;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: $gray-light;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: $gray-light;
+        border-left-style: solid;
+        border-left-width: 1px;
+    }
+}
+
+.high-contrast {
+    //
+}

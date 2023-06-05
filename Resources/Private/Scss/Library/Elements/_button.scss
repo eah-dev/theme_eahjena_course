@@ -1,0 +1,33 @@
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: inherit;
+}
+.button-wrapper {
+    text-align: center;
+}
+.btn-default {
+    background-color: $btn-color-blue;
+    border-color: $btn-color-blue;
+    color: $white;
+    &:hover {
+        background-color: $white;
+        border-color: $btn-color-blue;
+        color: $btn-color-blue !important;
+    }
+}
+
+//
+.high-contrast {
+    .btn-default {
+        background-color: $black;
+        border-color: $black;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            border-color: $black;
+            color: $black !important;
+        }
+    }
+}

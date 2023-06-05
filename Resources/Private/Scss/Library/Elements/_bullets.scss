@@ -1,0 +1,17 @@
+.frame-type-bullets {
+    padding-bottom: 1rem;
+    .frame-header {
+        //
+    }
+    dt,
+    ol.list,
+    ul.list {
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+        font-size: $h5-font-size;
+    }
+}
+
+.high-contrast {
+    //
+}

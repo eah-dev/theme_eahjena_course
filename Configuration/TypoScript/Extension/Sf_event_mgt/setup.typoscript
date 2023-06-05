@@ -1,0 +1,53 @@
+######################
+#### Sf_event_mgt ####
+######################
+
+plugin.tx_sfeventmgt {
+  view {
+    templateRootPaths {
+      0 = EXT:theme_eahjena_library/Resources/Private/Templates/Extension/Sf_event_mgt/
+      1 = EXT:sf_event_mgt/Resources/Private/Templates/
+    }
+    partialRootPaths {
+      0 = EXT:theme_eahjena_library/Resources/Private/Partials/Extension/Sf_event_mgt/
+      1 = EXT:sf_event_mgt/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+      0 = EXT:theme_eahjena_library/Resources/Private/Layout/Extension/Sf_event_mgt/
+      1 = EXT:sf_event_mgt/Resources/Private/Layouts/
+    }
+  }
+	# ====================================
+	# Settings available inside Controller and View by accessing $this->settings or {settings.xyz}
+	# ====================================
+	settings {
+		cropMaxCharacters = 200
+        # Get lightbox settings from fluid_styled_content
+    lightbox {
+      enabled = {$styles.content.textmedia.linkWrap.lightboxEnabled}
+      class = {$plugin.bootstrap_package_contentelements.lightbox.cssClass}
+      prefix = {$plugin.bootstrap_package_contentelements.lightbox.prefix}
+      height = {$plugin.bootstrap_package_contentelements.lightbox.image.maxHeight}
+      width = {$plugin.bootstrap_package_contentelements.lightbox.image.maxWidth}
+      image {
+        maxHeight = {$plugin.bootstrap_package_contentelements.lightbox.image.maxHeight}
+        maxWidth = {$plugin.bootstrap_package_contentelements.lightbox.image.maxWidth}
+      }
+      rel = lightbox[myImageSet]
+    }
+
+        # --------------
+    #  Detail
+    # --------------
+    detail {
+      # media configuration
+      media {
+        image {
+          maxWidth = 340
+          maxHeight = *
+          lazyLoading = lazy
+        }
+      }
+    }
+  }
+}

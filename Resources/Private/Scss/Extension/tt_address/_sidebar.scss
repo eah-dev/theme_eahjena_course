@@ -1,0 +1,39 @@
+#sidebar_right_content {
+    .tx-ttaddress {
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1px;
+        border-color: $gray;
+        margin-bottom: 1rem;
+    }
+    .tt_address_list.sidebarshort,
+    .tt_address_list.sidebarfull,
+    .tt_address_list.sidebarfullnoimage {
+        .tt_address_detail {
+            margin-bottom: 0.5rem;
+            .thumbnail {
+                text-align: center;
+            }
+            .address-fullname {
+                font-size: $h4-font-size;
+                color: $blue;
+                padding: 0.5rem 0;
+            }
+        }
+    }
+}
+.bodyBigFonts {
+    #sidebar_right_content {
+        .tt_address_list.sidebarshort,
+        .tt_address_list.sidebarfull,
+        .tt_address_list.sidebarfullnoimage {
+            .address-fullname {
+                font-size: $h2-font-size-big;
+            }
+        }
+    }
+}
+.bodyHighContrast {
+    //
+}

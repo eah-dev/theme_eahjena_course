@@ -1,0 +1,44 @@
+#
+# PageTS for Theme EAHJena bibo
+#
+
+// RTE
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/RTE.tsconfig'
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/RTE/allowTags.tsconfig'
+
+// TCAdefaults
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/TCADEFAULTS.tsconfig'
+
+// TCEFORM
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+
+// custom TCEFORM
+TCEFORM {
+    pages {
+        layout {
+            removeItems = 1,2,3
+        }
+        backend_layout {
+            removeItems = -1,1, pagets__CentralStartsite,pagets__Default,pagets__DefaultNoLeftmenu,pagets__DefaultNoLeftmenuSidebar,pagets__DefaultSidebar,pagets__Specialwomenu,pagets__3ColumnsLeftMenu,pagets__4Columns,pagets__facultystartsite,pagets__personalpagedefault,pagets__SpecialStartsite
+        }
+        backend_layout_next_level {
+            removeItems = -1,1, pagets__CentralStartsite,pagets__Default,pagets__DefaultNoLeftmenu,pagets__DefaultNoLeftmenuSidebar,pagets__DefaultSidebar,pagets__Specialwomenu,pagets__3ColumnsLeftMenu,pagets__4Columns,pagets__facultystartsite,pagets__personalpagedefault,pagets__SpecialStartsite
+        }
+    }
+}
+
+// TCEMAIN
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
+
+//BackendLayouts
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/onepage1.tsconfig'
+
+// Content Elements
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/ContentElement/All.tsconfig'
+
+#################################
+#### LOAD extension settings ####
+#################################
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/Extension/bootstrap_package/setup.tsconfig'
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/Extension/news/setup.library.tsconfig'
+@import 'EXT:theme_eahjena_course/Configuration/TsConfig/Page/Extension/Tt_address/setup.library.tsconfig'

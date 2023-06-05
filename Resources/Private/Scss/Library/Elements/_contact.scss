@@ -1,0 +1,86 @@
+/// Ansprechpartner - Sidebar
+.contact-sidebar-wrapper {
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    .contact-header {
+      text-align: left;
+      padding: 10px;
+      line-height: 24px;
+      width: 100%;
+      .title {
+        text-align: left;
+        font-size: 17px;
+      }
+    }
+    .contact-content {
+      text-align: left;
+      padding: 10px;
+      // width: 100%;
+      .item {
+        line-height: 24px;
+        .icon {
+          text-align: center;
+          //
+          @include media-breakpoint-up(xs) {
+            @include make-col(2);
+          }
+        }
+        // include icon
+        .text {
+          padding-left: 5px;
+          //
+          @include media-breakpoint-up(xs) {
+            @include make-col(10);
+          }
+        }
+        // without before icon
+        .value {
+          @include media-breakpoint-up(xs) {
+            @include make-col(12);
+          }
+        }
+      }
+      .contact-imgage {
+        text-align: center;
+        img {
+          padding-bottom: 15px;
+          width: 90%;
+          max-width: 300px;
+        }
+      }
+      .contact-name {
+        font-weight: bold;
+        font-size: 19px;
+      }
+    }
+}
+.contact-sidebar-default {
+    border-color: $gray;
+    .contact-header {
+        background-color: $blue;
+        color: $white;
+        .title {
+        color: $white;
+        }
+    }
+    .contact-content {
+        background-color: #eee;
+        color: rgba(0, 0, 0, 0.65);//#000000a6;
+        border-radius: 0 0 5px 5px;
+        //
+        .contact-name {
+            //
+        }
+        .text {
+            //
+        }
+        i {
+            //
+        }
+    }
+}
+// high - contrast
+.high-contrast {
+}

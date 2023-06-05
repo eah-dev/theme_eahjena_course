@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-06-05UTC11:38:000">
+        <header>
+            <authorName>Carsten Hoeelbing</authorName>
+            <authorEmail>carsten.hoelbing@eah-jena.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="header.h1.title">
+                <source>H1</source>
+            </trans-unit>
+            <trans-unit id="header.h2.title">
+                <source>H2</source>
+            </trans-unit>
+            <trans-unit id="header.h3.title">
+                <source>H3</source>
+            </trans-unit>
+            <trans-unit id="header.h4.title">
+                <source>H4</source>
+            </trans-unit>
+            <trans-unit id="header.h5.title">
+                <source>H5</source>
+            </trans-unit>
+
+            <trans-unit id="layout.faculty">
+                <source>Fachbereich</source>
+            </trans-unit>
+            <trans-unit id="layout.library">
+                <source>Bibliothek</source>
+            </trans-unit>
+            <trans-unit id="layout.intranet">
+                <source>Intranet</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.example">
+                <source>Example</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+
+            <trans-unit id="customizedEAHElementsDefaultHeader">
+                <source>EAH-Elemente</source>
+            </trans-unit>
+            <trans-unit id="customizedEAHElementsInteractiveHeader">
+                <source>EAH-Elemente (interaktiv)</source>
+            </trans-unit>
+            <trans-unit id="customizedEAHElementsMediaHeader">
+                <source>EAH-Elemente Media</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayouts.type.onepage1">
+                <source>STG - Standard (OnePage)</source>
+            </trans-unit>
+
+
+            <trans-unit id="BackendLayoutsColumsNameRollupPicture">
+                <source>Seitenbild (1100x400px)</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsNameMainContentOne">
+                <source>Inhaltsbereich (Hintergrund: weiß)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsNameMainContentTwo">
+                <source>Inhaltsbereich (Hintergrund: grau)</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsNameSidebarLeft">
+                <source>Sidebar - links</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsNameSidebarRight">
+                <source>Sidebar - rechts</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsName3RowsLeft">
+                <source>dreispaltig - links</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName3RowsMiddle">
+                <source>dreispaltig - mittig</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName3RowsRight">
+                <source>dreispaltig - rechts</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsName4RowsLeft">
+                <source>vierspaltig - links</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName4RowsMiddleLeft">
+                <source>vierspaltig - mittig (links)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName4RowsMiddleRight">
+                <source>vierspaltig - mittig (rechts)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName4RowsRight">
+                <source>vierspaltig - rechts</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsName3RowsLeftInverse">
+                <source>dreispaltig - links (inverse)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName3RowsMiddleInverse">
+                <source>dreispaltig - mittig (inverse)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName3RowsRightInverse">
+                <source>dreispaltig - rechts (inverse)</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsName2RowsLeft">
+                <source>zweispaltig - links</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsColumsName2RowsRight">
+                <source>zweispaltig - rechts</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsColumsName1Rows">
+                <source>einspaltig</source>
+            </trans-unit>
+
+            <trans-unit id="backend_layout.column.content.left25w">
+                <source>links 25% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.left33w">
+                <source>links 33% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.left50w">
+                <source>links 50% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.left75w">
+                <source>links 75% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.center33w">
+                <source>mittig 33% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.right25w">
+                <source>rechts 25% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.right25wsidebar">
+                <source>Sidebar - rechts 25% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.right33w">
+                <source>rechts 33% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.right50w">
+                <source>rechts 50% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.right75w">
+                <source>rechts 75% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content.fullwidth">
+                <source>volle Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer.100w">
+                <source>Footer: 100% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer.50w">
+                <source>Footer: 50% Breite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer.33w">
+                <source>Footer: 33% Breite</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsFooterColumsName3RowsLeft">
+                <source>Footer - dreispaltig - links</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsFooterColumsName3RowsMiddle">
+                <source>Footer - dreispaltig - mittig</source>
+            </trans-unit>
+            <trans-unit id="BackendLayoutsFooterColumsName3RowsRight">
+                <source>Footer - dreispaltig - rechts</source>
+            </trans-unit>
+
+            <trans-unit id="BackendLayoutsFooterMetaInfo">
+                <source>Footer - Logoleiste [Bilder- Höhe max 75px, Breite individuell]</source>
+            </trans-unit>
+
+            <trans-unit id="option.open">
+                <source>offen</source>
+            </trans-unit>
+            <trans-unit id="option.closed">
+                <source>geschlossen</source>
+            </trans-unit>
+            <trans-unit id="field.panel_status">
+                <source>Panel Status</source>
+            </trans-unit>
+            <trans-unit id="field.background_color_class.none">
+                <source>keine</source>
+            </trans-unit>
+            <trans-unit id="field.background_color_class.green">
+                <source>grün</source>
+            </trans-unit>
+            <trans-unit id="field.background_color_class.blue">
+                <source>blau</source>
+            </trans-unit>
+            <trans-unit id="field.background_color_class.graylight">
+                <source>hell grau</source>
+            </trans-unit>
+
+            <trans-unit id="ttaddress.displaymode.sidebarfull.title">
+                <source>Sidebar Layout 1 (vollständig)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.sidebarfullnoimage.title">
+                <source>Sidebar Layout 2 (vollständig, ohne Bild)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.sidebarshort.title">
+                <source>Sidebar Layout 3 (Bild, Name und Position)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.sidebarfullnoposition.title">
+                <source>Sidebar Layout 4 (vollständig, ohne Position und ohne Beschreibung)</source>
+            </trans-unit>
+
+            <trans-unit id="ttaddress.displaymode.list.accordion.1.title">
+                <source>Akkordion Layout 1 (Liste (Nachname, Titel Vorname) und alle Datenfelder)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.list.accordion.2.title">
+                <source>Akkordion Layout 2 (Liste (Titel Vorname Nachname) und alle Datenfelder)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.list.accordion.3.title">
+                <source>Akkordion Layout 3 (Liste (Nachname, Vorname, Titel) und alle Datenfelder)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.list.accordion.4.title">
+                <source>Akkordion Layout 4 (Liste (Position) und alle Datenfelder)</source>
+            </trans-unit>
+
+            <trans-unit id="ttaddress.displaymode.linktosinglepage.title">
+                <source>PanelLink zu einer Personenseite (Nachname, Titel Vorname)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.linktosinglepage2.title">
+                <source>PanelLink zu einer Personenseite (Titel Vorname Nachname)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.linktosinglepage3.title">
+                <source>PanelLink zu einer Personenseite (Nachname, Vorname, Titel)</source>
+            </trans-unit>
+
+            <trans-unit id="ttaddress.displaymode.tableContactList.1.title">
+                <source>Personenliste Layout Tabelle (Name, Tel, E-Mail, WWW)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.tableContactList.2.title">
+                <source>Personenliste Layout Tabelle (Name, Tel, E-Mail, Position)</source>
+            </trans-unit>
+
+            <trans-unit id="ttaddress.displaymode.personalpagesimple.1.title">
+                <source>Ansicht - Personenseite 1</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.personalpagesimple.2.title">
+                <source>Ansicht - Personenseite 2</source>
+            </trans-unit>
+
+            <trans-unit id="ttaddress.displaymode.eahcontactshort.title">
+                <source>EAH-Jena Kontakt (Anschrift)</source>
+            </trans-unit>
+            <trans-unit id="ttaddress.displaymode.businesscard1.title">
+                <source>Visitenkarte</source>
+            </trans-unit>
+
+            <trans-unit id="ttnews.templateLayouts.startpage.title">
+                <source>Startseite: Box (horizontale Auflistung, volle Breite)</source>
+            </trans-unit>
+            <trans-unit id="ttnews.templateLayouts.startpagefix.title">
+                <source>Startseite: Box (horizontale Auflistung, 4-Spalten(fix), volle Breite)</source>
+            </trans-unit>
+            <trans-unit id="ttnews.templateLayouts.carousel.title">
+                <source>Carousel</source>
+            </trans-unit>
+            <trans-unit id="ttnews.templateLayouts.listwithsidebar.title">
+                <source>Newsliste mit Sidebar</source>
+            </trans-unit>
+            <trans-unit id="ttnews.templateLayouts.list2colums.title">
+                <source>Nachrichtenliste zweispaltig</source>
+            </trans-unit>
+            <trans-unit id="ttnews.templateLayouts.listflexible.title">
+                <source>Nachrichtenliste flexible Breite</source>
+            </trans-unit>
+             <trans-unit id="ttnews.templateLayouts.startsiteLibrary.title">
+                <source>Startseite: Bibliothek</source>
+            </trans-unit>
+
+             <trans-unit id="ttsfeventmgt.templateLayouts.startpagebox.title">
+                <source>Startseite: Box (volle Breite)</source>
+            </trans-unit>
+             <trans-unit id="ttsfeventmgt.templateLayouts.startpagefix3col.title">
+                <source>Startseite: Box (horizontale Auflistung, 3-Spalten(fix), volle Breite)</source>
+            </trans-unit>
+             <trans-unit id="ttsfeventmgt.templateLayouts.startpagefix4col.title">
+                <source>Startseite: Box (horizontale Auflistung, 4-Spalten(fix), volle Breite)</source>
+            </trans-unit>
+            <trans-unit id="ttsfeventmgt.templateLayouts.list2colums.title">
+                <source>Veranstaltungsliste zweispaltig</source>
+            </trans-unit>
+            <trans-unit id="ttsfeventmgt.templateLayouts.listflexible.title">
+                <source>Veranstaltungsliste flexible Breite</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

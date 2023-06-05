@@ -1,0 +1,48 @@
+.portfoliopreviewcard {
+    .portfoliopreviewcard-item {
+        padding-top: 1rem;
+        text-decoration: none;
+        color: $gray-800;
+    }
+
+    .itemLink {
+        text-decoration: none;
+    }
+
+    .bordersytle {
+        padding: 1rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $gray-300;
+        box-shadow: 0 0 7px 3px rgba($black, .1), inset 0 0 1px 1px rgba($white, .3);
+
+        .ppcard-title {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 7px 3px rgba($black, .6), inset 0 0 1px 1px rgba($white, .5);
+        }
+    }
+}
+
+// Style
+.ppcard-title-box {
+    text-align: center;
+    font-size: $h2-font-size;
+    color: $gray-700;
+}
+
+.ppcard-content-box {
+    text-align: center;
+    color: $gray-800;
+}
+.high-contrast {
+    .ppcard-title-box,
+    .ppcard-content-box,
+    .portfoliopreviewcard .portfoliopreviewcard-item {
+        color: $white;
+    }
+
+}

@@ -1,0 +1,27 @@
+.idea/
+nbproject/*
+vendor/*
+composer.lock
+prepros.cfg
+.php_cs.cache
+Resources/Public/Contrib/**/package.json
+Build/report/*
+/tmp
+
+# Build folder
+Build/node_modules
+Build/Stylesheets
+Build/Report
+Build/package-lock.json
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
+*.zip

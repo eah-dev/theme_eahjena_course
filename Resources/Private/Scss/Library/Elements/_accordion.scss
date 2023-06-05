@@ -1,0 +1,30 @@
+.frame-type-accordion {
+    .accordion {
+        padding-bottom: 1rem;
+    }
+}
+.bodyBigFonts {
+    .accordion {
+        .card-header {
+            a {
+                // font-size: 20px;
+            }
+        }
+        .accordion-body {
+            // font-size: 18px;
+        }
+    }
+}
+.high-contrast {
+    .accordion {
+        .accordion-header {
+            background-color: $black;
+            a {
+                color: $white;
+            }
+        }
+        .accordion-body {
+            //
+        }
+    }
+}

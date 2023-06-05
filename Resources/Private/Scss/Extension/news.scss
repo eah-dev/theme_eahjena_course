@@ -1,0 +1,10 @@
+// general settings
+@import 'news/news-basic.scss';
+
+// settings for the list-view
+@import 'news/newsListItem';
+
+//settings for the detail/single-view (show one newsItem)
+// @import 'news/carousel';
+// @import 'news/newsSingle';
+@import 'news/newDetail';

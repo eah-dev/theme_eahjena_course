@@ -1,0 +1,224 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+
+#############################################################
+#### EXTENSIONS                                          ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/Cookieman/setup.typoscript'
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/Felogin/setup.typoscript'
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/Ke_search/setup.typoscript'
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/News/setup.typoscript'
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/Sf_event_mgt/setup.typoscript'
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/Shibboleth/setup.typoscript'
+@import 'EXT:theme_eahjena_course/Configuration/TypoScript/Extension/Tt_address/setup.typoscript'
+
+styles.content.allowTags:= addToList(iframe)
+
+##############
+#### PAGE ####
+##############
+page {
+  # set favicon
+  shortcutIcon = {$page.favicon.file}
+
+  10 {
+    templateRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+      10 = EXT:theme_eahjena_course/Resources/Private/Templates/Page/
+      20 = {$page.fluidtemplate.templateRootPath}
+    }
+    layoutRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+      10 = EXT:theme_eahjena_course/Resources/Private/Layouts/Page/
+      20 = {$page.fluidtemplate.layoutRootPath}
+    }
+    partialRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+      10 = EXT:theme_eahjena_course/Resources/Private/Partials/Page/
+      20 = {$page.fluidtemplate.partialRootPath}
+    }
+    settings {
+      LibrarybasePageUid = {$themes.header.LibrarybasePageUid}
+      header.mobil.showLink.goToStudiProgram.enable = 0
+    }
+
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    // https://docs.typo3.org/typo3cms/SitePackageTutorial/MainMenuCreation/Index.html
+    dataProcessing {
+      40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      40 {
+        languages = {$page.theme.language.languageValue}
+        as = languagenavigation
+      }
+      60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      60 {
+        levels = {$themes.menu.mainnavigation.levels}
+        includeSpacer = {$themes.menu.mainnavigation.levels}
+        as = eahmainnavigation
+      }
+      70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      70 {
+        levels = {$themes.menu.subnavigation.levels}
+        entryLevel = {$themes.menu.subnavigation.entryLevel}
+        expandAll = {$themes.menu.subnavigation.expandAll}
+        includeSpacer = {$themes.menu.subnavigation.includeSpacer}
+        as = eahsubnavigation
+      }
+      80 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      80 {
+        levels = {$themes.menu.mobilmainnavigation.levels}
+        entryLevel = {$themes.menu.mobilmainnavigation.entryLevel}
+        expandAll = {$themes.menu.mobilmainnavigation.expandAll}
+        includeSpacer = {$themes.menu.mobilmainnavigation.includeSpacer}
+        as = eahmobilmainnavigation
+      }
+      //81 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      //81 {
+      //  special = directory
+      //  special.value = {$themes.header.menu.headernavigationstructur.id}
+      //  levels = 1
+      //  includeSpacer = 1
+      //  includeNotInMenu = true
+      //  as = headernavigationstructur
+      //}
+      //82 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      //82 {
+      //  special = directory
+      //  special.value = {$themes.header.menu.headernavigationlogin.id}
+      //  levels = 1
+      //  includeSpacer = 1
+      //  includeNotInMenu = true
+      //  as = headernavigationlogin
+      //}
+      83 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      83 {
+        entryLevel = 0
+        levels = 0
+        expandAll = 1
+        includeSpacer = 1
+        as = eahfullnavigation
+      }
+      84 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      84 {
+        table = tt_content
+        pidInList.field = uid
+        as = onepagemenu
+        where = sectionIndex = 1
+        orderBy = colPos
+      }
+      85 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      85 {
+        special = directory
+        //special.value = {$themes.footer.menu.footernavigationleft.id}
+        special.value = {$menu.footer.footernavigationleft.id}
+        levels = 1
+        includeSpacer = 1
+        includeNotInMenu = true
+        as = footernavigationleft
+      }
+      86 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      86 {
+        special = directory
+        //special.value = {$themes.footer.menu.footernavigationcenter.id}
+        special.value = {$menu.footer.footernavigationcenter.id}
+        levels = 1
+        includeSpacer = 1
+        includeNotInMenu = true
+        as = footernavigationcenter
+      }
+      87 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      87 {
+        special = directory
+        //special.value = {$themes.footer.menu.footernavigationright.id}
+        special.value = {$menu.footer.footernavigationright.id}
+        levels = 1
+        includeSpacer = 1
+        includeNotInMenu = true
+        as = footernavigationright
+      }
+      88 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      88 {
+        special = directory
+        //special.value = {$themes.footer.menu.footerdefaultlinks.id}
+        special.value = {$menu.footer.footerdefaultlinks.id}
+        levels = 1
+        includeSpacer = 1
+        includeNotInMenu = true
+        as = footerdefaultlinks
+      }
+      90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      90 {
+        special = rootline
+        special.range = 0|3
+        includeNotInMenu = 1
+        as = breadcrumb
+        ##if {
+        ##    value = {$page.theme.breadcrumb.enableLevel}
+        ##    value {
+        ##        insertData = 1
+        ##        prioriCalc = 1
+        ##        stdWrap.wrap = |-1
+        ##    }
+        ##    isGreaterThan {
+        ##        data = level
+        ##    }
+        ##}
+        dataProcessing {
+          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+          10 {
+            references.fieldName = nav_icon
+            as = icon
+          }
+        }
+      }
+    }
+
+  }
+  includeCSSLibs {
+    theme = EXT:theme_eahjena_course/Resources/Public/Css/theme.min.css
+    theme {
+        title = main
+        media = all
+    }
+    googlewebfont =
+    bootstrappackageicon =
+  }
+
+  includeCSS {
+    themewebfonts = EXT:theme_eahjena_course/Resources/Public/Css/themewebfonts.min.css
+    themewebfonts {
+      media = all
+    }
+    theme =
+  }
+
+  includeJSLibs {
+
+  }
+
+  includeJS {
+
+  }
+
+  includeJSFooterlibs {
+
+  }
+
+  includeJSFooter {
+    theme_eahjena_course_scripts = EXT:theme_eahjena_course/Resources/Public/JavaScript/Dist/scripts.js
+  }
+}
+
+# return the number of content elements for a given colPos
+# usage in Fluid: {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 0}')}
+lib.hasContent = TEXT
+lib.hasContent.numRows {
+  table = tt_content
+  select.where = colPos = {field:colPos}
+  select.where.insertData = 1
+}

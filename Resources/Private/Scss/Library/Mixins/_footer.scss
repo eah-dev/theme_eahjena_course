@@ -1,0 +1,151 @@
+@mixin footer-content($footer-zentral-background-color, $footer-zentral-font-color, $footer-mobile-link-color ) {
+    .footer-content {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: $footer-zentral-background-color;
+        color: $footer-zentral-font-color; // Text-Farbe
+
+        a {
+            color: $footer-zentral-font-color; // Text-Farbe
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            // margin: 0.5em;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        // Spalten Anzahl insgesamt: 4
+        .footer-row-width-x4 {
+
+            // view points
+            @include media-breakpoint-up(xs) {
+                @include make-col(12);
+            }
+
+            @include media-breakpoint-up(sm) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-up(md) {
+                @include make-col(4);
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include make-col(3);
+            }
+        }
+
+        .footer-row {
+
+            //
+            h2,
+            .title {
+                color: $footer-zentral-font-color;
+                font-family: $footer-font-headline-family;
+                font-weight: $footer-font-headline-weight;
+                text-transform: uppercase;
+                text-align: left;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            // allgemeines zu einer liste
+            .footer-list {
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 0;
+
+                a {
+                    color: $footer-zentral-font-color;
+                }
+
+                ul {
+                    /* ohne Aufzählungspunkte */
+                    list-style-type: none;
+                    padding: 0;
+                    font-weight: $footer-font-links-weight;
+
+                    li {
+                        i {
+                            padding-right: 3px;
+                            font-size: $footer-font-icon-size;
+                        }
+                    }
+
+                }
+
+                .uni-title {
+                    font-weight: $footer-font-headline-weight;
+                }
+            }
+
+            .desktop {
+                .footer-list {
+                    font-family: $footer-font-links-family;
+                    line-height: 20px;
+                    padding: 0;
+
+                    ul {
+                        list-style-type: none;
+
+                        /* ohne Aufzählungspunkte */
+                        li {
+                            a {
+
+                                &:link,
+                                &:visited {
+                                    color: $footer-zentral-font-color;
+                                }
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    color: $eah-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mobile {
+                .panel {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+
+                    .panel-heading {
+
+                        // margin: 0 !important;
+                        // padding: 10px 0;
+                        // border: 0;
+                        .panel-title {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+
+                        .clickable {
+                            float: right;
+                        }
+                    }
+
+                    .panel-body {
+                        li {
+                            i {
+                                color: $footer-mobile-link-color; // $black;
+                            }
+
+                            a {
+                                color: $footer-mobile-link-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

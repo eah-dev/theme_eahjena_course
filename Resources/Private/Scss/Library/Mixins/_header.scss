@@ -1,0 +1,183 @@
+/**
+* Color
+*/
+@mixin setHeaderTopColor($globalHeaderMenuTop-bgc, $dropdown-bgc, $dropdown-btn-bgc, $dropdown-btn-color) {
+  .globalHeaderMenuTop {
+    background-color: $globalHeaderMenuTop-bgc;
+
+    .dropdown {
+      background-color: $dropdown-bgc;
+
+      button {
+        background-color: $dropdown-btn-bgc;
+        color: $dropdown-btn-color;
+      }
+    }
+
+    .header-meta {
+      color: $dropdown-btn-color;
+
+      a,
+      i {
+        color: $dropdown-btn-color;
+      }
+    }
+
+    button.showModalStructur {
+      background-color: $dropdown-btn-bgc;
+      color: $dropdown-btn-color;
+    }
+    .goToSignLanguage,
+    .goToEasyLanguage,
+    .language-menu,
+    .language-nav-link,
+    .btn-togglecontrast {
+      color: $dropdown-btn-color;
+    }
+  }
+}
+
+@mixin setHeaderContentColor($brandContent-color, $containerMainMenuNav-border-color, $containerMainMenuNav-active-navlink-color, $backgroundcolorhover) {
+  .brandContent a {
+    color: $brandContent-color;
+  }
+
+  .containerHeaderContentFaculty a {
+    color: $brandContent-color;
+  }
+
+  .containerMainMenu {
+    border-bottom-color: $containerMainMenuNav-border-color;
+  }
+
+  .headerpersonalpage {
+    border-bottom-color: $containerMainMenuNav-border-color;
+    border-bottom-style: solid;
+  }
+
+  .globalMainNavigation {
+    .navbar-nav {
+      .active {
+        .nav-link {
+          color: $containerMainMenuNav-active-navlink-color;
+        }
+      }
+
+      .navigationItem {
+        &:hover {
+          background-color: $brandContent-color;
+          transition: 0.5s;
+
+          a {
+            color: $backgroundcolorhover;
+          }
+        }
+      }
+    }
+  }
+}
+
+// set Header Modal Colour
+@mixin setHeaderModalColour($headerTitle, $title, $itemLink, $background, $border, $itemLinkHoverbackground, $itemLinkHovercolour) {
+  .globalHeaderMenuTop {
+    .modal {
+      .modal-content {
+        background-color: $background;
+        border-color: $border;
+
+        .modal-header {
+          .modal-title {
+            color: $headerTitle;
+          }
+
+          button {
+            color: $headerTitle;
+          }
+        }
+
+        .modal-body {
+          .modal-body-content-item {
+            .title {
+              color: $title
+            }
+
+            .items {
+              .item {
+                .itemWrapper {
+                  .itemLink {
+                    color: $itemLink;
+                  }
+
+                  &:hover {
+                    // background-color: $eah-gray-light;
+                    background-color: $itemLinkHoverbackground;
+
+                    .itemLink {
+                      color: $itemLinkHovercolour;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+* Fontsize
+*/
+@mixin setglobalHeaderMenuTopSizes($fontsize) {
+  .globalHeaderMenuTop {
+
+    .showSearch,
+    .changeFontsSize,
+    .changeFontsSize a,
+    .changeContrast,
+    .changeContrast a,
+    .goToIntranet,
+    .changeLanguage,
+    .dropdown button {
+      font-size: $fontsize;
+    }
+  }
+
+  button.showModalStructur {
+    font-size: $fontsize;
+  }
+}
+
+// set Header Modal Font Size
+@mixin setHeaderModalFontSize($headerTitle, $title, $itemLink ) {
+  .globalHeaderMenuTop {
+    .modal {
+      .modal-content {
+        .modal-header {
+          .modal-title {
+            font-size: $headerTitle;
+          }
+        }
+
+        .modal-body {
+          .modal-body-content-item {
+            .title {
+              font-size: $title;
+            }
+
+            .items {
+              .item {
+                .itemWrapper {
+                  .itemLink {
+                    font-size: $itemLink;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

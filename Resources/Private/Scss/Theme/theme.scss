@@ -1,0 +1,79 @@
+//
+//
+// Load configuration variables, Bootstrap styles, and core styles.
+//
+//
+
+// custom variables
+
+@import '../Library/Variables/color';
+@import '../Library/Variables/default';
+@import '../Library/Variables/typography';
+@import '../Library/Variables/footer';
+//@import '../Library/Variables/frame';
+@import '../Library/Variables/grid';
+@import '../Library/Variables/socialmedia';
+@import '../Library/Variables/navbar';
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "../../../../../bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+
+// Mixins
+@import '../Library/Mixins/mixins.scss';
+
+// typography
+@import '../Library/typography.scss';
+
+// colors
+@import '../Library/color.scss';
+
+// load scss files for the extension
+//@import '../Extension/indexedsearch.scss';
+@import '../Extension/news.scss';
+@import '../Extension/sf_event_mgt.scss';
+@import '../Extension/tt_address.scss';
+
+// Styles for Areas
+@import '../Library/Areas/beLayout';
+@import '../Library/Areas/breadcrumb';
+@import '../Library/Areas/content';
+@import '../Library/Areas/header';
+@import '../Library/Areas/footer';
+@import '../Library/Areas/main';
+@import '../Library/Areas/navbar';
+@import '../Library/Areas/navi';
+@import '../Library/Areas/rollupimage';
+@import '../Library/Areas/sidebar';
+
+// customize bootstrap_package Elements
+@import '../Library/Elements/accordion';
+@import '../Library/Elements/blockquote';
+@import '../Library/Elements/bullets';
+@import '../Library/Elements/button';
+@import '../Library/Elements/card';
+@import '../Library/Elements/carousel';
+@import '../Library/Elements/contact';
+@import '../Library/Elements/figure';
+@import '../Library/Elements/frame-header';
+@import '../Library/Elements/image';
+@import '../Library/Elements/menu_pages';
+//@import '../Library/Elements/menu_section_pages';
+//@import '../Library/Elements/menu_sitemap_pages';
+//@import '../Library/Elements/organigramm';
+@import '../Library/Elements/panel';
+@import '../Library/Elements/responsiveCarousel';
+@import '../Library/Elements/tab';
+@import '../Library/Elements/text';
+@import '../Library/Elements/textpic';
+@import '../Library/Elements/timeline';
+
+
+// Styles for Customelements
+//@import '../Library/Elements/Customelements/pagepreviewcard';
+//@import '../Library/Elements/Customelements/portfoliopreviewcard';
+
+// Styles for Menus
+// @import 'Library/Menus/*';
+

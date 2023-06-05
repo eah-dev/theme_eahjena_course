@@ -1,0 +1,15 @@
+#page-content {
+    .frame-type-panel {
+        padding-bottom: 1rem;
+        .card-panel {
+            .card-header  {
+                // font-size: $h5-font-size;
+            }
+            .card-body {
+                ul.list-normal {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

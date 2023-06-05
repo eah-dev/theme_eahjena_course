@@ -1,0 +1,42 @@
+plugin.tx_news {
+  view {
+    templateRootPath = EXT:theme_eahjena_library/Resources/Private/Templates/Extension/News/
+    partialRootPath = EXT:theme_eahjena_library/Resources/Private/Partials/Extension/News/
+    layoutRootPath = EXT:theme_eahjena_library/Resources/Private/Layouts/Extension/News/
+  }
+	rss.channel {
+
+		typeNum = 9818
+
+    # cat=EAH-Jena 2019 - Theme basis/file; type=string; label=title
+		title = EAH Jena Nachrichten
+    # cat=EAH-Jena 2019 - Theme basis/file; type=string; label=description
+		description =
+    # cat=EAH-Jena 2019 - Theme basis/file; type=string; label=link
+		link = https://www.eah-jena.de
+    # cat=EAH-Jena 2019 - Theme basis/file; type=string; label=language
+		language = de-de
+    # cat=EAH-Jena 2019 - Theme basis/file; type=string; label=copyright
+		copyright = EAH Jena Nachrichten
+		category = *
+    # cat=EAH-Jena 2019 - Theme basis/file; type=string; label=Path to template root (FE)
+		generator = TYPO3 EXT:news
+
+    # cat=EAH-Jena 2019 - Theme basis/file; type=int+; label=Limit Result
+    limit = 40
+    # cat=EAH-Jena 2019 - Theme basis/file; type=int+; label=Detail Page
+    detailPid = 2099
+    # cat=EAH-Jena 2019 - Theme basis/file; type=int+; label=NewsFolderID
+    startingpoint = 2091
+    # cat=plugin.tx_news/file; type=options[xml,atom]; label= set the format
+    format = xml
+	}
+  settings {
+    # disable css file loading
+    cssFile =
+  }
+  # ical
+  ical {
+    typeNum = 9819
+  }
+}

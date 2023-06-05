@@ -1,0 +1,114 @@
+#sidebar_left {
+
+    //padding-top: 1rem;
+    #sidebar_left_navi {
+        // this definition is store in a seprate scss-file (Elements/navi)
+    }
+
+    #sidebar_left_content {
+        /*
+        h1,
+        h2,
+        h3 {
+            font-size: $font-size-base;
+            font-weight: bold;
+        }
+        */
+    }
+}
+
+#sidebar_right {
+
+    /*
+    //padding-top: 1rem;
+    @include media-breakpoint-up(xs) {
+        // padding-left: 2rem;
+        // padding-right: 2rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+        // padding: 0;
+    }
+    */
+    #sidebar_right_content {
+        >ul {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 1px;
+            border-color: #555;
+            padding: 0.5rem 0.5rem 0.5rem 2rem;
+        }
+
+        /*
+        h1,
+        h2,
+        h3 {
+            font-size: $font-size-base;
+            font-weight: bold;
+        }
+        */
+    }
+
+    .frame-default {
+        padding-bottom: 0.4rem;
+        margin-bottom: 1rem
+    }
+
+    header.frame-header {
+        background-color: #394a5f;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1px;
+        border-color: #555;
+
+        //margin-top: 1rem;
+        .element-header {
+            margin: 0;
+            padding: 10px;
+            color: $white;
+            text-align: left;
+            line-height: 25px;
+            font-size: $h4-font-size;
+        }
+    }
+
+    >p {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1px;
+        border-color: #555;
+    }
+
+    .frame-type-bullets {
+        .frame-inner {
+            .frame-header {
+                //
+            }
+
+            ul.list {
+                padding: 0;
+                margin: 0;
+                padding-left: 2rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 1px;
+                border-color: #555
+            }
+        }
+    }
+}
+
+#sidebar_right_box {
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+
+    header {
+        font-weight: bold;
+    }
+}

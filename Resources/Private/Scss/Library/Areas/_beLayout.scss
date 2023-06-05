@@ -1,0 +1,16 @@
+/*
+.color-inverse {
+    background-color: $blue;
+    color: $white;
+}*/
+.containerContent {
+
+    >.container,
+    >.color-inverse>.container {
+
+        // padding: 1rem;
+        @include media-breakpoint-up(sm) {
+            // padding: 0;
+        }
+    }
+}

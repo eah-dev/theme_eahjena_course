@@ -1,0 +1,203 @@
+// general settings
+// special sidebar settings in file "_sidebar.scss"
+.tx-ttaddress {
+    .contactListTable {
+        .contactListTableHeader {
+            border-style: solid;
+            border-width: 1px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            .header {
+                font-weight: bold;
+                padding: 1rem 0.5rem;
+            }
+        }
+        .contactListTableItem {
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-right-style: solid;
+            border-left-style: solid;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            &:hover {
+            }
+            .textFontWeightBold {
+                font-weight: bold;
+            }
+            .item {
+                padding: 0.5rem;
+            }
+            .link {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .thumbnail {
+        img {
+            width: 100%;
+        }
+    }
+    ul.contactData,
+    ul.contactPosition,
+    ul.contactSocial {
+        i {
+            width: 1.5rem;
+        }
+    }
+    ul.f3-widget-paginator {
+        list-style-type: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0 ;
+        li {
+            display: inline-block;
+            padding: 0 1rem;
+        }
+    }
+    figure {
+        margin: 0;
+        .figure-img {
+            margin: 0;
+        }
+    }
+    .contactTitle {
+        padding-top: 1rem;
+    }
+    .addressInfo {
+        .title {
+            font-weight: bold;
+        }
+        .description {
+            padding-top: 1rem;
+        }
+    }
+    .goToPersoPage {
+        padding-bottom: 0.24rem;
+        .card {
+            border-radius: 0;
+        }
+        .contactLinkToPersoPage {
+            padding: 0.75rem 1.25rem;
+            .list-title,
+            .list-link {
+                font-size: 1.045rem;
+                font-weight: normal;
+                margin-bottom: 0;
+                line-height: 1.2em;
+            }
+        }
+    }
+    .description {
+        padding-bottom: 1.5rem;
+    }
+    .businesscard1 {
+        padding: 2rem;
+        background-color: $eah-gray;
+        .address-fullname {
+            padding-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+    }
+    .addressTable {
+        .item {
+            border-top-style: solid;
+            border-top-width: 2px;
+            border-top-color: $eah-gray;
+            padding: 0.8rem 0;
+            .title {
+                font-weight: bold;
+            }
+        }
+    }
+    .PersonalPageSimple_2 {
+        .address-fullname {
+            padding-bottom: 0.5rem;
+        }
+
+    }
+}
+
+.colorscheme-default,
+.colorscheme-library,
+.colorscheme-bw,
+.colorscheme-et,
+.colorscheme-gp,
+.colorscheme-gw,
+.colorscheme-mb,
+.colorscheme-mt,
+.colorscheme-sc,
+.colorscheme-sw,
+.colorscheme-wi {
+    .tx-ttaddress {
+        .contactListTable {
+            .contactListTableHeader {
+                background-color:  $bg-color-gray;
+                border-top-color: $gray-light;
+                border-right-color: $gray-light;
+                border-bottom-color: $gray-lighter;
+                border-left-color: $gray-light;
+            }
+            .contactListTableItem {
+                border-bottom-color: $gray-light;
+                border-right-color: $gray-light;
+                border-left-color: $gray-light;
+                color: $blue;
+                &.bg-gray-light {
+                    background-color:  $gray-lighter;
+                }
+                &:hover,
+                &.bg-gray-light:hover {
+                    background-color:  $bg-color-gray;
+                }
+                .link {
+                    a {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .accordion {
+            .accordion-header {
+                background-color:  $eah-gray;
+            }
+        }
+        .goToPersoPage {
+            .contactLinkToPersoPage {
+                background-color: $eah-gray;
+                color: $blue;
+                a {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+// fontsize
+.bodyBigFonts {
+    //
+}
+// contrast
+.bodyHighContrast.colorscheme-default,
+.bodyHighContrast.colorscheme-library,
+.bodyHighContrast.colorscheme-bw,
+.bodyHighContrast.colorscheme-et,
+.bodyHighContrast.colorscheme-gp,
+.bodyHighContrast.colorscheme-gw,
+.bodyHighContrast.colorscheme-mb,
+.bodyHighContrast.colorscheme-mt,
+.bodyHighContrast.colorscheme-sc,
+.bodyHighContrast.colorscheme-sw,
+.bodyHighContrast.colorscheme-wi {
+    .tx-ttaddress {
+        .accordion {
+            .accordion-header {
+                background-color:  $black;
+            }
+        }
+    }
+}

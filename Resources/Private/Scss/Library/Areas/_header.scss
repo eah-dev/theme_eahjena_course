@@ -1,0 +1,340 @@
+/***************************
+*** globalHeaderMenuTop
+****************************/
+.globalHeaderMenuTop {
+
+  .linkglobalContrast,
+  .linkglobalFontSize {
+    padding: 0 .4rem;
+  }
+
+  .changeLanguage,
+  .showSearch,
+  ,
+  .changeContrast,
+  .changeContrast a,
+  .goToIntranet,
+  .dropdown button {
+
+    //padding: 0.2rem 0.4rem;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  button.showModalStructur {
+    border: 0;
+    padding: 0;
+  }
+
+  .modal {
+    .modal-content {
+      .modal-body {
+        .modal-body-content-item {
+          .title {
+            border-bottom-width: 1px;
+            border-bottom-style: inset;
+            font-weight: bold;
+          }
+
+          .items {
+
+            // padding-top: 10px;
+            .itemWrapper {
+              //border-bottom-width: 1px;
+              //border-bottom-style: inset;
+              // display: table;
+              padding-top: 0.5rem;
+              ///width: 100%;
+              height: 100%;
+
+              .itemLink {
+                width: 100%;
+
+                //padding: 5px;
+                ///height: 4rem;
+                //display: table-cell;
+                //vertical-align: middle;
+                //letter-spacing: 0.02rem;
+                .itemContent {
+                  height: 100%;
+                }
+
+                .entry {
+                  background-color: $gray-lighter;
+                  //background-color: $green;
+                  //color: $white;
+                  color: $green;
+                  padding: 0.5rem;
+                  //height: 100%;
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 100px;
+
+                  &:hover {
+                    //background-color: $green;
+                    background-color: $eah-gray-light;
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.language-menu {
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+}
+
+.language-menu,
+.goToSignLanguage,
+.goToEasyLanguage {
+  padding: .5rem .6rem 0 0;
+}
+
+// globalHeaderMenuTop: set default values
+//@include setglobalHeaderMenuTopSizes(12px);
+// modal: set default values
+// setHeaderModalColour($headerTitle, $title, $item, $background, $border
+//@include setHeaderModalColour($white, $white, $white, $green, $white);
+//@include setHeaderModalColour($green, $black, $black, $white, $black, $green, $white);
+//@include setHeaderModalFontSize(1.5rem, 1.3rem, 1.1rem);
+
+.headerpersonalpage {
+  border-bottom-width: 4px;
+}
+
+// Style for the Header Style
+#pageheader.pageHeaderStyle1 {
+  padding-bottom: 1.1rem;
+}
+
+#page-header-deskop {
+  padding: 1rem 20px;
+  font-size: 1.14rem;
+}
+
+.containerHeaderTop {
+  padding: 1rem 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerHeaderTopPadding {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerHeaderContentFaculty {
+  padding: 1rem 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .brand-line-small {
+    font-size: 12px;
+  }
+
+  .brand-line-big {
+    font-size: 30px;
+    font-weight: 700
+  }
+}
+
+.containerMainNavigation {
+  padding: 0 20px;
+}
+
+.spacerFontsize,
+.spacerContrast {
+  padding-left: 0.1rem;
+  padding-right: 0.3rem;
+}
+
+.headerTopMeta {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerTopModal {
+  button {
+    font-weight: bold;
+  }
+}
+
+.headerTopMeta {
+
+  .showModalStructur,
+  .language-menu {
+    font-weight: bold;
+  }
+}
+
+.headerTopInfoText {
+  font-weight: bold;
+
+  a {
+    color: $white;
+  }
+}
+
+/**
+ * Mobil
+ */
+.mobil-header-meta {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 5rem;
+  justify-content: right;
+}
+
+.mobile-language-menu {
+  padding: .4rem 1rem 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+/**
+ * COLOR
+ */
+.colorscheme-library {
+  // globalHeaderMenuTop: set default values
+  @include setglobalHeaderMenuTopSizes(15px);
+  @include setHeaderModalColour($gray-800, $black, $black, $white, $black, $green, $white);
+  @include setHeaderModalFontSize(1.5rem, 1.3rem, 1.1rem);
+
+  @include setHeaderTopColor($green, $green, $green, $white);
+  @include setHeaderContentColor($green, $green, $green, $white);
+}
+
+/***************************
+*** brandContent
+****************************/
+.brandContent {
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  .brand-line-small {
+    font-size: 12px;
+  }
+
+  .brand-line-big {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.containerMainMenu {
+  border-bottom-style: solid;
+  border-width: 0.3rem;
+}
+
+// sp end
+
+.high-contrast {
+
+  #pageheader,
+  #page-header-deskop {
+    background-color: $black !important;
+
+    a {
+      color: yellow;
+    }
+  }
+
+  @include setHeaderTopColor($black, $black, $black, yellow);
+  @include setHeaderModalColour($white, $white, $white, $black, $white, $black, $white);
+  @include setHeaderContentColor($black, $black, $white, $white);
+
+  .modal-content .entry {
+    background-color: $black !important;
+    color: yellow !important;
+
+    a {
+      color: yellow !important;
+    }
+  }
+}
+
+// responsiv stuff
+@include media-breakpoint-up(xs) {
+  .globalMobileHeaderNavigation {
+    #mobile_header_logo {
+      border-bottom-width: 1px;
+      border-bottom-style: inset;
+      border-bottom-color: $white;
+      padding: 1rem;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    display: inherit;
+
+    .site_sub_title {
+      font-size: 0.8rem;
+      color: $white;
+    }
+
+    .site_title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+
+  //#headerContent,
+  //.globalHeaderMenuTop,
+  //.containerMainMenu {
+  //    display: none;
+  // }
+}
+
+@include media-breakpoint-up(lg) {
+  .globalMobileHeaderNavigation {
+    display: none;
+  }
+
+  //#headerContent,
+  //.globalHeaderMenuTop,
+  //.containerMainMenu {
+  //    display: inherit;
+  //}
+}
+
+.navcontainerlibrary {
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  a {
+    color: $blue;
+  }
+}
+
+.spaceline-green {
+  padding-top: 1rem;
+  border-bottom-color: $green;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}

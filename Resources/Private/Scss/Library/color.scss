@@ -1,0 +1,42 @@
+.bg-green {
+    background-color: $green;
+}
+.bg-blue {
+    background-color: $blue;
+}
+.bg-graylight {
+    background-color: $gray-lighter;
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-white {
+    background-color: $white;
+}
+.bg-navlight {
+    background-color: #f8f9fa!important;
+}
+// create classes for background colors
+@mixin make-background-color($name, $settings) {
+    $background: map-get($settings, 'background');
+    $background-hover: map-get($settings, 'background-hover');
+    $color: color-yiq($background);
+    $link-color: map-get($settings, 'link-color');
+    $link-hover-color: map-get($settings, 'link-hover-color');
+    .bgcolor-#{$name} {
+        color: $color;
+        background-color: $background;
+        &:hover {
+            background-color: $background-hover;
+        }
+        a:not(.btn) {
+            color: $link-color;
+            &:hover {
+                color: $link-hover-color;
+            }
+        }
+    }
+}
+@each $name, $settings in $background-colors {
+    @include make-background-color($name, $settings);
+}

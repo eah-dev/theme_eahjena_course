@@ -1,0 +1,4 @@
+#
+# BACKENDLAYOUTS
+#
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_eahjena_course/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">

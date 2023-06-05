@@ -1,0 +1,50 @@
+.carousel-item-type-call_to_action {
+    .carousel-box {
+        background-color: $transparent-blue-darker;
+        color: $white;
+        padding-left: 3rem;
+    }
+}
+//
+/*
+.carousel-small {
+    .carousel-text-inner {
+        padding: 0;
+        background-color: $eah-overlay-50;
+    }
+    .carousel-header {
+        padding: 1rem 0 0;
+        font-size: $h2-font-size;
+        text-align: left;
+    }
+    .carousel-subheader {
+        font-size: $h5-font-size;
+        font-weight: normal;
+        padding: 0 0 1rem;
+        text-align: left;
+    }
+}
+*/
+//
+// Type: Header
+//
+/*
+.carousel-item-type-header {
+    .carousel-text-inner {
+        margin: 0 auto;
+        @include media-breakpoint-up(md) {
+            width: 90%;
+        }
+
+        //@include media-breakpoint-up(lg) {
+        //    width: 65%;
+        //}
+        //
+    }
+}
+*/
+
+// for High Contrast
+.high-contrast {
+
+}

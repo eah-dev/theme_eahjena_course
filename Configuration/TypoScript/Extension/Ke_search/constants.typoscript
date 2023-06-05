@@ -1,0 +1,14 @@
+plugin.tx_kesearch {
+  # cat=ke_search/file; type=string; label= ke_search template path: This is the path to the templates.
+  templateRootPath.Desktop = EXT:theme_eahjena_library/Resources/Private/Templates/Extension/Ke_search/Desktop/
+  templateRootPath.Mobile = EXT:theme_eahjena_library/Resources/Private/Templates/Extension/Ke_search/Mobile/
+
+  # cat=ke_search/file; type=string; label= ke_search partial path: This is the path to the partials.
+  partialRootPath = EXT:theme_eahjena_library/Resources/Private/Partials/Extension/Ke_search/
+
+  # cat=ke_search/file; type=string; label= ke_search layout path: This is the path to the layouts.
+  layoutRootPath = EXT:theme_eahjena_library/Resources/Private/Layouts/Extension/Ke_search/
+
+  # cat=ke_search/file; type=int+; label= ke_search result PageID
+  resultPage = 1106
+}

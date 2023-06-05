@@ -1,0 +1,240 @@
+.goToEventsOverviewPage {
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.events-startpageView {
+	.event-title {
+		a {
+			color: $black;
+		}
+	}
+
+}
+.event-detail-teaser {
+	font-style: italic;
+	padding: 1rem 0;
+}
+/*
+ * Default CSS for list, detail and registration view
+ */
+/*
+ * Default CSS for calendar view
+ */
+ .userregistration-list-item {
+	margin-bottom: 15px;
+}
+.event-list-item {
+	margin-bottom: 15px;
+}
+.userregistration-list-row {
+	margin-bottom: 5px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.event-registration-row {
+	margin-bottom: 5px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.event-detail-row {
+	margin-bottom: 5px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.event-list-row {
+	margin-bottom: 5px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.userregistration-list-label {
+	display: block;
+	width: 150px;
+	min-height: 1px;
+	font-weight: bold;
+}
+.event-registration-label {
+	display: block;
+	width: 150px;
+	min-height: 1px;
+	font-weight: bold;
+}
+.event-detail-label {
+	display: block;
+	width: 150px;
+	min-height: 1px;
+	font-weight: bold;
+}
+.event-list-label {
+	display: block;
+	width: 150px;
+	min-height: 1px;
+	font-weight: bold;
+}
+.userregistration-list-value {
+	display: block;
+	flex: 1;
+}
+.event-registration-value {
+	display: block;
+	flex: 1;
+}
+.event-detail-value {
+	display: block;
+	flex: 1;
+}
+.event-list-value {
+	display: block;
+	flex: 1;
+}
+.tx-sf-event-mgt {
+	.clear {
+		clear: both;
+	}
+	form.registration {
+		fieldset {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		label {
+			width: 100%;
+		}
+		.radio-field-radiofields {
+			width: 100%;
+		}
+		.checkbox-field-checkfields {
+			width: 100%;
+		}
+		.checkbox {
+			label {
+				float: none;
+				width: auto;
+			}
+		}
+		.error {
+			color: #ff0000;
+		}
+	}
+}
+.button {
+	margin-right: 0.6em;
+}
+.event-calendar {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+	a {
+		color: #000000;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+}
+.event-calendar__weeknumber {
+	width: 20px;
+	text-align: center;
+	margin-left: -1px;
+	margin-bottom: -1px;
+	padding: 6px;
+	background: #fff;
+	color: #CCC;
+	font-weight: bold;
+}
+.event-calendar__weekdays {
+	display: flex;
+	background: #CCCCCC;
+	margin: 0;
+	padding: 0;
+}
+.event-calendar__weekdays-weekday {
+	flex: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	padding: 6px 0;
+	background: #CCCCCC;
+}
+.event-calendar__days {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.event-calendar__day {
+	min-height: 120px;
+	flex: 1;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid #CCCCCC;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+.event-calendar__day-today {
+	background: #e6e6e6;
+}
+.event-calendar__day-other-month {
+	background: #f3f3f3;
+}
+.event-calendar__day-date {
+	font-weight: bold;
+	color: #000000;
+}
+.event-calendar__day-event {
+	clear: both;
+	display: block;
+	padding: 5px;
+	margin-top: 6px;
+	margin-bottom: 5px;
+	background: #f4f7f7;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+}
+.event-calendar__day-event-time {
+	font-size: 10px;
+	margin-top: 5px;
+}
+.event-calendar__browser {
+	display: flex;
+	display: flex;
+	-webkit-padding-start: 0;
+}
+.event-calendar__browser-prev {
+	flex: 1;
+	text-align: center;
+	text-align: left;
+	padding-top: 8px;
+}
+.event-calendar__browser-next {
+	flex: 1;
+	text-align: center;
+	text-align: right;
+	padding-top: 8px;
+}
+.event-calendar__browser-current {
+	flex: 1;
+	text-align: center;
+}
+.event-required {
+	color: #000000;
+}
+.error-class {
+	label {
+		color: #ff0000;
+	}
+	.event-required {
+		color: #ff0000;
+	}
+}

@@ -1,0 +1,57 @@
+.breadcrumb-section {
+    padding-bottom: 1.5rem;
+    //padding-top: 1rem;
+    background: none;
+
+    @include media-breakpoint-up(sm) {
+        //
+    }
+
+    .breadcrumb {
+        //background-color: $white;
+        padding: 0;
+        margin: 0;
+        //font-weight: 500;
+        font-size: $h6-font-size;
+
+        ul {
+            li {
+                list-style: none;
+
+                .spacer {
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+
+        .breadcrumbList {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.breadcrumb {
+    background: none;
+}
+
+// if one exist then add this symbol ">"
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: ">";
+}
+
+//
+.high-contrast {
+    .breadcrumb {
+        color: $black;
+
+        a {
+            color: $black;
+        }
+    }
+}

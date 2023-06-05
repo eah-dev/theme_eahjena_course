@@ -1,0 +1,23 @@
+########################
+#### TT_ADDRESS     ####
+########################
+
+plugin {
+  tx_ttaddress {
+    view {
+      templateRootPaths {
+        1 = EXT:theme_eahjena_library/Resources/Private/Templates/Extension/Tt_address/
+      }
+      partialRootPaths {
+        1 = EXT:theme_eahjena_library/Resources/Private/Partials/Extension/Tt_address/
+      }
+      layoutRootPaths {
+        1 = EXT:theme_eahjena_library/Resources/Private/Layout/Extension/Tt_address/
+      }
+    }
+  }
+  tx_ttaddress_pi1 {
+    templatePath = EXT:theme_eahjena_library/Resources/Private/Extensions/tt_address/Templates/
+    defaultTemplateFileName = sidebar.htm
+  }
+}

@@ -1,0 +1,50 @@
+// typography
+$font-family-sans-serif:                'Roboto-Condensed', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+$font-family-serif:                     Georgia, 'Times New Roman', Times, serif;
+$font-family-glyphiconsHalflings:       'Glyphicons Halflings';
+$font-family-monospace:                 Menlo, Monaco, Consolas, 'Courier New', monospace;
+$font-family-base:                      $font-family-sans-serif;
+
+$font-size-base:                        0.95rem;//15px;// 0.95em; !important;
+$scaling-font-size-big:                 1.4;
+
+$h1-font-size:                          $font-size-base * 1.4;//;32px !important;//28px;//floor(($font-size-base * 2)); // ~28px
+$h1-font-size-big:                      $font-size-base * 1.4 * $scaling-font-size-big;
+$h2-font-size:                          $font-size-base * 1.3;  //28px !important;//22px;//floor(($font-size-base * 1.57)); // ~22px;
+$h2-font-size-big:                      $font-size-base * 1.3 * $scaling-font-size-big;
+$h3-font-size:                          $font-size-base * 1.2;  //22px;//12px;//ceil(($font-size-base * 1.22)); // ~18px;
+$h3-font-size-big:                      $font-size-base * 1.2 * $scaling-font-size-big;
+$h4-font-size:                          $font-size-base * 1.1; // ~16px;
+$h4-font-size-big:                      $font-size-base * 1.1 * $scaling-font-size-big;
+$h5-font-size:                          $font-size-base * 1;        // 15px
+$h5-font-size-big:                      $font-size-base * 1 * $scaling-font-size-big;
+$h6-font-size:                          $font-size-base * 0.8; // ~12px
+$h6-font-size-big:                      $font-size-base * 0.8 * $scaling-font-size-big;
+/*
+$font-size-bigger:                      floor(($font-size-base * 6.4)); // ~90px
+$font-size-big:                         floor(($font-size-base * 5)); // ~70px
+$font-size-smaller:                     ceil(($font-size-base * 0.7)); // ~10px
+*/
+$font-size-large:                       $h4-font-size; // ~18px
+$font-size-small:                       $font-size-base * 0.85; // ~12px
+
+$headline-scaling: ();
+$headline-scaling: map-merge((
+  xs: 1,
+  sm: 1,
+  md: 1, //1.1,
+  lg: 1, //1.2,
+  xl: 1, //1.3
+), $headline-scaling);
+$headline-awesome-scaling: ();
+$headline-awesome-scaling: map-merge((
+  xs: 1,
+  sm: 1,
+  md: 1, //1.25,
+  lg: 1, //1.5,
+  xl: 1  //1.75
+), $headline-awesome-scaling);
+
+$headings-font-weight:                  400;
+
+$card-title-size:                       .95rem;

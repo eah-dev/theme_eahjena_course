@@ -1,0 +1,51 @@
+.frame-header {
+    h1.element-header {
+        font-size: $h1-font-size;
+        a {
+            font-size: $h1-font-size;
+        }
+    }
+    h2.element-header {
+        font-size: $h2-font-size;
+        a {
+            font-size: $h2-font-size;
+        }
+    }
+    h3.element-header {
+        font-size: $h3-font-size;
+        a {
+            font-size: $h3-font-size;
+        }
+    }
+    h4.element-header {
+        font-size: $h4-font-size;
+        a {
+            font-size: $h4-font-size;
+        }
+    }
+    h5.element-header {
+        font-size: $h5-font-size;
+        a {
+            font-size: $h5-font-size;
+        }
+    }
+    h6.element-header {
+        font-size: $h6-font-size;
+        a {
+            font-size: $h6-font-size;
+        }
+    }
+}
+.frame-type-header {
+}
+
+.high-contrast {
+    .frame-header {
+        .element-header {
+            color: $black;
+            a {
+                color: $black;
+            }
+        }
+    }
+}

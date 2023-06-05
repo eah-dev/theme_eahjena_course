@@ -1,0 +1,63 @@
+.frame-type-quote {
+    blockquote,
+    .blockquote {
+        border-left-style: solid;
+        border-width: 5px;
+        p {
+            font-size: $h5-font-size;
+            padding: 10px;
+        }
+        footer,
+        .footer,
+        .blockquote-footer {
+            padding: 10px;
+            font-size: $h6-font-size;
+        }
+    }
+}
+// color
+.colorscheme-default,
+.colorscheme-library,
+.colorscheme-bw,
+.colorscheme-et,
+.colorscheme-gp,
+.colorscheme-gw,
+.colorscheme-mb,
+.colorscheme-mt,
+.colorscheme-sc,
+.colorscheme-sw,
+.colorscheme-wi {
+    .frame-type-quote {
+        blockquote,
+        .blockquote {
+            background-color: $gray-lighter;
+            border-left-color: $green;
+            p {
+                color: $black;
+
+            }
+            footer,
+            .footer,
+            .blockquote-footer {
+                color: $gray;
+            }
+        }
+    }
+}
+
+// high - contrast
+.high-contrast {
+    blockquote,
+    .blockquote {
+        background-color: $black;
+        border-left-color: $white;
+        p {
+            color: $white;
+        }
+        footer,
+        .footer,
+        .blockquote-footer {
+            color: $white;
+        }
+    }
+}

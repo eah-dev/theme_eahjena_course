@@ -1,0 +1,176 @@
+plugin.tx_news {
+  view {
+    templateRootPaths >
+    templateRootPaths {
+      0 = EXT:news/Resources/Private/Templates/
+      1 = {$plugin.tx_news.view.templateRootPath}
+    }
+    partialRootPaths >
+    partialRootPaths {
+      0 = EXT:news/Resources/Private/Partials/
+      1 = {$plugin.tx_news.view.partialRootPath}
+    }
+    layoutRootPaths >
+    layoutRootPaths {
+      0 = EXT:news/Resources/Private/Layouts/
+      1 = {$plugin.tx_news.view.layoutRootPath}
+    }
+  }
+  settings {
+    #cssFile = {$plugin.tx_news.settings.cssFile}
+
+    # Get lightbox settings from fluid_styled_content
+    lightbox {
+      enabled = {$styles.content.textmedia.linkWrap.lightboxEnabled}
+      class = {$plugin.bootstrap_package_contentelements.lightbox.cssClass}
+      prefix = {$plugin.bootstrap_package_contentelements.lightbox.prefix}
+      height = {$plugin.bootstrap_package_contentelements.lightbox.image.maxHeight}
+      width = {$plugin.bootstrap_package_contentelements.lightbox.image.maxWidth}
+      image {
+        maxHeight = {$plugin.bootstrap_package_contentelements.lightbox.image.maxHeight}
+        maxWidth = {$plugin.bootstrap_package_contentelements.lightbox.image.maxWidth}
+      }
+      rel = lightbox[myImageSet]
+    }
+
+    # --------------
+    #  Detail
+    # --------------
+    detail {
+      # media configuration
+      media {
+        image {
+          maxWidth = 282
+          maxHeight =
+          lazyLoading = lazy
+        }
+        imageSidebar {
+          maxWidth = 245
+          maxHeight =
+        }
+      }
+    }
+    # --------------
+    #  List
+    # --------------
+    list {
+        # media configuration
+        media {
+          image {
+            maxWidth = 300
+            maxHeight =
+            width = 200
+            height = 150
+            lazyLoading = lazy
+          }
+        newsCarouselItem {
+          maxWidth = 100
+          maxHeight = 80
+        }
+      }
+      paginate {
+        # can be overridden by plugin
+        itemsPerPage = 10
+        insertAbove = 0
+        insertBelow = 1
+        maximumNumberOfLinks = 4
+      }
+    }
+  }
+}
+# ?type=9818
+[getTSFE().type == {$plugin.tx_news.rss.channel.typeNum}]
+  plugin.tx_news.settings.format = {$plugin.tx_news.rss.channel.format}
+
+  pageNewsRSS = PAGE
+  pageNewsRSS {
+    # Override the typeNum if you have more than one feed
+    typeNum = {$plugin.tx_news.rss.channel.typeNum}
+    config {
+      # deactivate Standard-Header
+      disableAllHeaderCode = 1
+      # no xhtml tags
+      xhtml_cleaning = none
+      admPanel = 0
+      # define charset
+      metaCharset = utf-8
+      # you need an english locale to get correct rfc values for <lastBuildDate>, ...
+      locale_all = de_DE
+      # CMS 8 (adjust if using ATOM)
+      additionalHeaders.10.header = Content-Type:application/xml;charset=utf-8
+      disablePrefixComment = 1
+      baseURL = {$plugin.tx_news.rss.channel.link}
+      absRefPrefix = {$plugin.tx_news.rss.channel.link}
+      linkVars >
+    }
+    10 < tt_content.list.20.news_pi1
+    10 {
+      switchableControllerActions {
+          News {
+              1 = list
+          }
+      }
+      settings < plugin.tx_news.settings
+      settings {
+        categories = {$plugin.tx_news.rss.channel.categories}
+        categoryConjunction = notor
+        limit = {$plugin.tx_news.rss.channel.limit}
+        detailPid = {$plugin.tx_news.rss.channel.detailPid}
+        startingpoint = {$plugin.tx_news.rss.channel.startingpoint}
+        format = {$plugin.tx_news.rss.channel.format}
+        # Override the typeNum if you have more than one feed, must be the same as above!
+        #list.rss.channel.typeNum = {$plugin.tx_news.rss.channel.typeNum}
+      }
+    }
+  }
+[global]
+
+# its does not working yet
+# ical
+# ?type=9819
+[getTSFE().type == {$plugin.tx_news.ical.typeNum}]
+  plugin.tx_news.settings.format = xml
+  plugin.tx_news.settings.domain.data = getEnv:HTTP_HOST
+  plugin.tx_news.settings.useStdWrap = domain
+
+  pageNewsICalendar = PAGE
+  pageNewsICalendar {
+    # Override the typeNum if you have more than one feed
+    typeNum = {$plugin.tx_news.rss.channel.typeNum}
+    config {
+      # deactivate Standard-Header
+      disableAllHeaderCode = 1
+      # no xhtml tags
+      xhtml_cleaning = none
+      admPanel = 0
+      # define charset
+      metaCharset = utf-8
+      # For 7 LTS
+      additionalHeaders = Content-Type:text/calendar;charset=utf-8
+      # Since 8 LTS
+      additionalHeaders.10.header = Content-Type:text/calendar;charset=utf-8
+      disablePrefixComment = 1
+      linkVars >
+    }
+    10 < tt_content.list.20.news_pi1
+    10 {
+      switchableControllerActions {
+        News {
+          1 = list
+        }
+      }
+      settings < plugin.tx_news.settings
+      settings {
+        categories = 9
+        categoryConjunction = notor
+        limit = {$plugin.tx_news.rss.channel.limit}
+        detailPid = {$plugin.tx_news.rss.channel.detailPid}
+        startingpoint = {$plugin.tx_news.rss.channel.startingpoint}
+        format = xml
+        domain.data = getEnv:HTTP_HOST
+        useStdWrap = domain
+      }
+    }
+  }
+[global]
+

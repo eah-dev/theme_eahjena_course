@@ -1,0 +1,21 @@
+.carousel-news {
+    .item {
+        height: 192px;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+            height: 256px;
+        }
+        @include media-breakpoint-up(md) {
+            height: 330px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 400px;
+        }
+    }
+}
+.news-single {
+    .article .news-img-wrap img {
+        width: 100%;
+        height: 100%;
+    }
+}
