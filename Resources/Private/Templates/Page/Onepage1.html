@@ -27,7 +27,7 @@
         </div>
     </f:if>
     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 30}')}||
-                    {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 31}')}">
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 31}')}">
         <div class="container">
             <div class="row">
                 <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 30}')}">
@@ -59,8 +59,8 @@
         </div>
     </f:if>
     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 33}')}||
-                        {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 34}')}||
-                        {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 35}')}">
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 34}')}||
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 35}')}">
         <div class="container">
             <div class="row">
                 <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 33}')}">
@@ -88,7 +88,7 @@
         </div>
     </f:if>
     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 36}')}">
-        <div class="container">
+        <div class="container bg-lightgrey">
             <div class="row">
                 <div class="col-md-12">
                     <f:cObject
@@ -99,7 +99,7 @@
         </div>
     </f:if>
     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 37}')}||
-                        {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 38}')}">
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 38}')}">
         <div class="container">
             <div class="row">
                 <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 37}')}">
@@ -130,30 +130,27 @@
             </div>
         </div>
     </f:if>
-    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 40}')}">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 40}')}||
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 41}')}||
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 42}')}">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <f:cObject
-                        typoscriptObjectPath="lib.dynamicContent"
-                        data="{pageUid: '{data.uid}', colPos: '40'}" />
-                </div>
-            </div>
-        </div>
-    </f:if>
-    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 41}')}||
-                        {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 42}')}">
-        <div class="container">
-            <div class="row">
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 40}')}">
+                    <div class="col-md-4">
+                        <f:cObject
+                            typoscriptObjectPath="lib.dynamicContent"
+                            data="{pageUid: '{data.uid}', colPos: '40'}" />
+                    </div>
+                </f:if>
                 <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 41}')}">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <f:cObject
                             typoscriptObjectPath="lib.dynamicContent"
                             data="{pageUid: '{data.uid}', colPos: '41'}" />
                     </div>
                 </f:if>
                 <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 42}')}">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <f:cObject
                             typoscriptObjectPath="lib.dynamicContent"
                             data="{pageUid: '{data.uid}', colPos: '42'}" />
@@ -163,7 +160,7 @@
         </div>
     </f:if>
     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 43}')}">
-        <div class="container">
+        <div class="container bg-lightgrey">
             <div class="row">
                 <div class="col-md-12">
                     <f:cObject
@@ -173,20 +170,21 @@
             </div>
         </div>
     </f:if>
-</f:section>
-
-<f:section name="Footer">
-    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 44}')}||
-                        {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 45}')}">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 44}')}">
         <div class="container">
             <div class="row">
-                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 44}')}">
-                    <div class="col-md-6">
-                        <f:cObject
-                            typoscriptObjectPath="lib.dynamicContent"
-                            data="{pageUid: '{data.uid}', colPos: '44'}" />
-                    </div>
-                </f:if>
+                <div class="col-md-12">
+                    <f:cObject
+                        typoscriptObjectPath="lib.dynamicContent"
+                        data="{pageUid: '{data.uid}', colPos: '44'}" />
+                </div>
+            </div>
+        </div>
+    </f:if>
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 45}')}||
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 46}')}">
+        <div class="container">
+            <div class="row">
                 <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 45}')}">
                     <div class="col-md-6">
                         <f:cObject
@@ -194,16 +192,80 @@
                             data="{pageUid: '{data.uid}', colPos: '45'}" />
                     </div>
                 </f:if>
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 46}')}">
+                    <div class="col-md-6">
+                        <f:cObject
+                            typoscriptObjectPath="lib.dynamicContent"
+                            data="{pageUid: '{data.uid}', colPos: '46'}" />
+                    </div>
+                </f:if>
             </div>
         </div>
     </f:if>
-    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 46}')}">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 47}')}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <f:cObject
                         typoscriptObjectPath="lib.dynamicContent"
-                        data="{pageUid: '{data.uid}', colPos: '46'}" />
+                        data="{pageUid: '{data.uid}', colPos: '47'}" />
+                </div>
+            </div>
+        </div>
+    </f:if>
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 47}')}">
+        <div class="container bg-lightgrey">
+            <div class="row">
+                <div class="col-md-12">
+                    <f:cObject
+                        typoscriptObjectPath="lib.dynamicContent"
+                        data="{pageUid: '{data.uid}', colPos: '47'}" />
+                </div>
+            </div>
+        </div>
+    </f:if>
+</f:section>
+
+<f:section name="Footer">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 70}')}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <f:cObject
+                        typoscriptObjectPath="lib.dynamicContent"
+                        data="{pageUid: '{data.uid}', colPos: '70'}" />
+                </div>
+            </div>
+        </div>
+    </f:if>
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 71}')}||
+                     {f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 72}')}">
+        <div class="container">
+            <div class="row">
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 71}')}">
+                    <div class="col-md-6">
+                        <f:cObject
+                            typoscriptObjectPath="lib.dynamicContent"
+                            data="{pageUid: '{data.uid}', colPos: '71'}" />
+                    </div>
+                </f:if>
+                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 72}')}">
+                    <div class="col-md-6">
+                        <f:cObject
+                            typoscriptObjectPath="lib.dynamicContent"
+                            data="{pageUid: '{data.uid}', colPos: '72'}" />
+                    </div>
+                </f:if>
+            </div>
+        </div>
+    </f:if>
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.hasContent', data: '{colPos: 73}')}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <f:cObject
+                        typoscriptObjectPath="lib.dynamicContent"
+                        data="{pageUid: '{data.uid}', colPos: '73'}" />
                 </div>
             </div>
         </div>

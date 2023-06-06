@@ -4,11 +4,11 @@
 
         <div class="body-bg colorscheme-{settings.colorscheme.code} {f:if(condition: '{settings.globalContrast.status} == 1', then: 'bodyHighContrast')}">
 
-            <header id="pageheader">
+            <header id="pageheader" class=" fixed-top sticky-bottom">
                 <f:render partial="HeaderTop" arguments="{_all}" />
             </header>
 
-            <main id="page-content" class="page-content">
+            <main id="page-content" class="page-content pt-5">
                 <f:render section="Main" arguments="{_all}" />
             </main>
 
