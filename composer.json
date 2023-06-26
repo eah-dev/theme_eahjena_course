@@ -1,7 +1,7 @@
 {
     "name": "ernstabbehochschulejena/theme_eahjena_course",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Sitepackage for the EAH Jena (course)",
     "homepage": "https://github.com/eah-dev/theme_eahjena_course",
     "keywords": [
       "EAH Jena",
@@ -9,6 +9,7 @@
       "bootstrap",
       "theme"
     ],
+    "version": "1.0.0",
     "authors": [
       {
         "name": "Carsten Hoelbing",
@@ -29,13 +30,12 @@
         "url": "Tests/Packages/*"
       }
     },
-    "version": "1.0.0",
     "require": {
-        "bk2k/bootstrap-package": "^12.0 || ^13.0"
+      "bk2k/bootstrap-package": "^13 || ^14"
     },
     "autoload": {
         "psr-4": {
-            "ErnstAbbeHochschuleJena\\ThemeEahjenaLibrary\\": "Classes/"
+            "ErnstAbbeHochschuleJena\\ThemeEahjenaCourse\\": "Classes/"
         }
     },
     "extra": {
