@@ -674,7 +674,7 @@ progress {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 
@@ -6070,7 +6070,7 @@ fieldset:disabled .cc-btn {
 
 @media (min-width: 1200px) {
   .modal-xl {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 
@@ -12299,7 +12299,7 @@ textarea.form-control.error {
 
 @media (min-width: 1200px) {
   .frame-layout-embedded > .frame-group-container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 
@@ -12363,7 +12363,7 @@ textarea.form-control.error {
 
 @media (min-width: 1200px) {
   .frame-container-default {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 
@@ -15215,7 +15215,7 @@ iframe {
 
 @media (min-width: 1200px) {
   .cc-container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 

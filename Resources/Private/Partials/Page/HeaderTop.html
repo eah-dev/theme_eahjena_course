@@ -1,6 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg bg-light sticky-bottom">
     <div class="container">
-      <a class="navbar-brand" href="#"><f:render partial="Icon" section="eahjenalogoMobile" /></a>
+      <a class="navbar-brand" href="#"><f:render partial="Icon" section="eahjenalogoDesktop" /></a> <!--Zum Dekstop Logo gewechselt-->
+      <!-- Auskommentiert, da auf Onepager nicht benötigt
       <button
         class="navbar-toggler collapsed"
         type="button"
@@ -10,14 +11,14 @@
         aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+      </button>-->
+      <!--<div class="navbar-collapse collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link" aria-current="page" href="#">Start</a>
             <f:for each="{onepagemenu}" as="menuItem" >
                 <a class="nav-link" href="#c{menuItem.data.uid}" data="{menuItem.data.header}">{menuItem.data.header}</a>
             </f:for>
         </div>
-      </div>
+      </div>-->
     </div>
   </nav>
