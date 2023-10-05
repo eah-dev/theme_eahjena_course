@@ -55,7 +55,7 @@
 
 
             <trans-unit id="BackendLayoutsColumsNameRollupPicture">
-                <source>Seitenbild (1100x400px)</source>
+                <source>Seitenbild (1200x400px)</source>
             </trans-unit>
 
             <trans-unit id="BackendLayoutsColumsNameMainContentOne">

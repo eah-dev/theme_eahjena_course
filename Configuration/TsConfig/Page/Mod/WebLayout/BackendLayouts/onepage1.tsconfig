@@ -8,15 +8,15 @@ mod {
         title = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayouts.type.onepage1
         config {
           backend_layout {
-            colCount = 20
-            rowCount = 16
+            colCount = 35
+            rowCount = 20
             rows {
               1 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameRollupPicture
                     colspan = 20
-                    colPos = 3
+                    colPos = 32
                   }
                 }
               }
@@ -25,21 +25,21 @@ mod {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentOne
                     colspan = 18
-                    colPos = 0
+                    colPos = 33
                   }
                 }
               }
               3 {
                 columns {
                   1 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left75w
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left67w
                     colspan = 12
-                    colPos = 30
+                    colPos = 34
                   }
                   2 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right25w
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right33w
                     colspan = 6
-                    colPos = 31
+                    colPos = 35
                     }
                 }
               }
@@ -48,53 +48,25 @@ mod {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentOne
                     colspan = 18
-                    colPos = 32
+                    colPos = 36
                   }
                 }
               }
               5 {
                 columns {
                   1 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsLeft
-                    colspan = 6
-                    colPos = 33
-                  }
-                  2 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsMiddle
-                    colspan = 6
-                    colPos = 34
-                  }
-                  3 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsRight
-                    colspan = 6
-                    colPos = 35
-                  }
-                }
-              }
-              6 {
-                columns {
-                  1 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentTwo
-                    colspan = 18
-                    colPos = 36
-                  }
-                }
-              }
-              7 {
-                columns {
-                  1 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left50w
-                    colspan = 9
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left80w
+                    colspan = 12
                     colPos = 37
                   }
                   2 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right50w
-                    colspan = 9
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right20w
+                    colspan = 6
                     colPos = 38
-                  }
+                    }
                 }
               }
-              8 {
+              6 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentOne
@@ -103,7 +75,7 @@ mod {
                   }
                 }
               }
-              9 {
+              7 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsLeft
@@ -122,7 +94,7 @@ mod {
                   }
                 }
               }
-              10 {
+              8 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentTwo
@@ -131,26 +103,54 @@ mod {
                   }
                 }
               }
-              11 {
+              9 {
+                columns {
+                  1 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left50w
+                    colspan = 9
+                    colPos = 44
+                  }
+                  2 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right50w
+                    colspan = 9
+                    colPos = 45
+                  }
+                }
+              }
+              10 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentOne
                     colspan = 18
-                    colPos = 44
+                    colPos = 46
+                  }
+                }
+              }
+              11 {
+                columns {
+                  1 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsLeft
+                    colspan = 6
+                    colPos = 47
+                  }
+                  2 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsMiddle
+                    colspan = 6
+                    colPos = 48
+                  }
+                  3 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsName3RowsRight
+                    colspan = 6
+                    colPos = 49
                   }
                 }
               }
               12 {
                 columns {
                   1 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left50w
-                    colspan = 9
-                    colPos = 45
-                  }
-                  2 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right50w
-                    colspan = 9
-                    colPos = 46
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentTwo
+                    colspan = 18
+                    colPos = 50
                   }
                 }
               }
@@ -159,20 +159,43 @@ mod {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentOne
                     colspan = 18
-                    colPos = 47
+                    colPos = 51
                   }
                 }
               }
               14 {
                 columns {
                   1 {
-                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentTwo
-                    colspan = 18
-                    colPos = 48
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.left50w
+                    colspan = 9
+                    colPos = 52
+                  }
+                  2 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.content.right50w
+                    colspan = 9
+                    colPos = 53
                   }
                 }
               }
               15 {
+                columns {
+                  1 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentOne
+                    colspan = 18
+                    colPos = 54
+                  }
+                }
+              }
+              16 {
+                columns {
+                  1 {
+                    name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:BackendLayoutsColumsNameMainContentTwo
+                    colspan = 18
+                    colPos = 55
+                  }
+                }
+              }
+              17 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer.100w
@@ -181,7 +204,7 @@ mod {
                   }
                 }
               }
-              16 {
+              18 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer.50w
@@ -195,7 +218,7 @@ mod {
                   }
                 }
               }
-              17 {
+              19 {
                 columns {
                   1 {
                     name = LLL:EXT:theme_eahjena_course/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer.100w
