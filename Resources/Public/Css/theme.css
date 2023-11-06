@@ -6625,13 +6625,14 @@ fieldset:disabled .cc-btn {
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: 0.5;
+  opacity: 0;
   transition: opacity 0.6s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {
     transition: none;
+    opacity: 0;
   }
 }
 
@@ -6657,6 +6658,7 @@ fieldset:disabled .cc-btn {
 
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #000000;
+  opacity: 0;
 }
 
 .carousel-dark .carousel-caption {
@@ -12193,9 +12195,9 @@ textarea.form-control.error {
   --frame-link-hover-color: #00aaa0;
   --frame-background: transparent;
   --frame-embedded-border-radius: 0.5rem;
-  --frame-width-large: 1600px;
-  --frame-width-medium: 870px;
-  --frame-width-small: 600px;
+  --frame-width-large: 1800px;
+  --frame-width-medium: 520px;
+  --frame-width-small: 490px;
   --frame-spacing: 1.75rem;
   --frame-spacing-small: 0.75rem;
   --frame-spacing-xs: 1.75rem;
@@ -13030,7 +13032,7 @@ textarea.form-control.error {
 
 @media (min-width: 768px) {
   .carousel .item {
-    height: 600px;
+    height: 490px;
   }
 }
 
@@ -13340,7 +13342,7 @@ textarea.form-control.error {
   z-index: 15;
   opacity: 1;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
 }
