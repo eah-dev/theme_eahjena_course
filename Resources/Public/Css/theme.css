@@ -12196,8 +12196,8 @@ textarea.form-control.error {
   --frame-background: transparent;
   --frame-embedded-border-radius: 0.5rem;
   --frame-width-large: 1800px;
-  --frame-width-medium: 520px;
-  --frame-width-small: 490px;
+  --frame-width-medium: 440px;
+  --frame-width-small: 410px;
   --frame-spacing: 1.75rem;
   --frame-spacing-small: 0.75rem;
   --frame-spacing-xs: 1.75rem;
