@@ -1,27 +1,26 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-    <f:spaceless>
-        <div id="top"></div>
 
-        <div class="body-bg colorscheme-{settings.colorscheme.code} {f:if(condition: '{settings.globalContrast.status} == 1', then: 'bodyHighContrast')}">
+    <div id="top"></div>
 
-            <header id="pageheader" class=" fixed-top sticky-bottom">
-                <f:render partial="HeaderTop" arguments="{_all}" />
-            </header>
+    <div class="body-bg colorscheme-{settings.colorscheme.code} {f:if(condition: '{settings.globalContrast.status} == 1', then: 'bodyHighContrast')}">
 
-            <main id="page-content" class="page-content pt-5">
-                <f:render section="Main" arguments="{_all}" />
-            </main>
+        <header id="pageheader" class=" fixed-top sticky-bottom">
+            <f:render partial="HeaderTop" arguments="{_all}" />
+        </header>
 
-            <f:asset.css identifier="filter">
-                .bp-page-footer {
-                    background-color: lightgray;
-                }
-            </f:asset.css>
-            <footer id="page-footer" class="bp-page-footer footer-colorpalette-{settings.colorscheme.code} d-print-none">
-                <f:render section="Footer" arguments="{_all}" />
-            </footer>
+        <main id="page-content" class="page-content pt-5">
+            <f:render section="Main" arguments="{_all}" />
+        </main>
 
-            <f:render partial="ScrollTop" arguments="{_all}" />
-        </div>
-    </f:spaceless>
+        <f:asset.css identifier="filter">
+            .bp-page-footer {
+                background-color: lightgray;
+            }
+        </f:asset.css>
+        <footer id="page-footer" class="bp-page-footer footer-colorpalette-{settings.colorscheme.code} d-print-none">
+            <f:render section="Footer" arguments="{_all}" />
+        </footer>
+
+        <f:render partial="ScrollTop" arguments="{_all}" />
+    </div>
 </html>
