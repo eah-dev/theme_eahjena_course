@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'constraints' => [
         'depends' => [
-            'bootstrap_package' => '13.0.0-14.9.99'
+            'bootstrap_package' => '14.0.0-15.9.99'
         ],
     ],
     'autoload' => [
