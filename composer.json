@@ -24,19 +24,8 @@
       "issues": "https://github.com/eah-dev/theme_eahjena_course/issues",
       "source": "https://github.com/eah-dev/theme_eahjena_course"
     },
-    "repositories": {
-      "tests": {
-        "type": "path",
-        "url": "Tests/Packages/*"
-      }
-    },
     "require": {
       "bk2k/bootstrap-package": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "ErnstAbbeHochschuleJena\\ThemeEahjenaCourse\\": "Classes/"
-        }
     },
     "extra": {
         "typo3/cms": {
